@@ -1,0 +1,17 @@
+.footer {
+  border-top: 1rem solid rgb(135, 181, 189);
+  bottom: 0;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 1rem;
+}
+
+.weatherdisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 85vh;
+}
