@@ -1,13 +1,15 @@
-import React from 'react';
+const SearchBox = ({onChange, input}) => {
 
-const SearchBox = () => {
 	return (
-		<div>
+		<>
 			<input 
 			type='search' 
+			name='searchbox'
 			placeholder='my city' 
+			className='br2 tc blue'
+			onChange={onChange}
 			/>
-		</div>
+		</>
 		);
 }
 

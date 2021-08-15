@@ -1,17 +1,13 @@
 import React from 'react';
 import SearchBox from './SearchBox';
-import { Navbar, Container, Nav} from 'react-bootstrap'
 
-const Title = () => {
+
+const Title = ({ onChange, input }) => {
     return(
-        <Navbar bg="light" expand="lg">
-            <Container>
-                <Navbar.Brand>What's the weather like in </Navbar.Brand>
-                <Nav className="me-auto">
-                    <SearchBox />
-                </Nav>
-            </Container>
-        </Navbar>
+        <div className='nav f4 courier tc bg-light-blue'>
+            <h1 className='lightest-blue nav-text'>What's the weather like in </h1>
+            <SearchBox onChange={onChange} value={input}/>
+        </div>
     );
 }
 
