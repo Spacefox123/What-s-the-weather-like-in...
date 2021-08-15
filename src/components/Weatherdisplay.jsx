@@ -1,13 +1,12 @@
-// import React from 'react';
+import React from 'react';
 
 // import { useEffect } from "react"
 
 const Weatherdisplay = ({ value }) => {
-    const apiKey = '3b622c39ee3333d7bebad099fb562948'
-
+    const API_KEY = process.env.REACT_APP_API_KEY
     async function getData() {
         try {
-            const data = await fetch(`api.openweathermap.org/data/2.5/weather?q=${value}&appid=${apiKey}`)
+            const data = await fetch(`api.openweathermap.org/data/2.5/weather?q=${value}&appid=${API_KEY}`)
             const parsed = await data.json()
             return parsed
         } catch(error) {
