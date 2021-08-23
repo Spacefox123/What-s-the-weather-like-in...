@@ -15,14 +15,20 @@
     rgba(255, 255, 255, 0.3)
   );
 
-  /* display: flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 
   width: 60%;
   height: 60vh;
   margin: 5rem auto;
   border-radius: 0.5rem;
+}
+
+.info {
+  position: relative;
+  display: flex;
 }
 
 .nav {
@@ -38,4 +44,46 @@
 .notfound {
   background-color: rgb(221, 24, 24);
   border: 3rem solid rgb(252, 102, 102);
+}
+
+.text {
+  border-right: 0.2rem solid gray;
+  margin: 1.5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(5, 5rem);
+  justify-items: center;
+  align-items: center;
+}
+
+.text p {
+  padding: 1rem;
+}
+
+.images {
+  margin: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.images img {
+  margin: 0.5rem;
+  width: 7rem;
+  border-radius: 1rem;
+  background-color: rgba(129, 183, 255, 0.445);
+
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+.images svg {
+  width: 20rem;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
 }
