@@ -20,9 +20,10 @@ const App = () => {
         .then(response => response.json())
         .then(data => setWeatherData({data}))
         .catch(err => setWeatherData(false))
+
     }, [input])
     
-    //! function that handles a change in the input and sets the state to the value
+    // function that handles a change in the input and sets the state to the value
     function handleChange(event) {
         setInput(event.target.value);
     }
