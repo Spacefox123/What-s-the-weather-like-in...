@@ -27,9 +27,9 @@ const App = () => {
     function handleChange(event) {
         setInput(event.target.value);
     }
-
+    // className='bg-light-blue'
     return(
-        <main className='bg-light-blue'>
+        <main >
             <Title onChange={handleChange} value={input}/>
             <Weatherdisplay value={weatherData}/>
             <Footer />
