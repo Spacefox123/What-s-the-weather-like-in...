@@ -37,7 +37,7 @@ const Weatherdisplay = ({ value }) => {
 
   try {
     let description = value.data.weather[0].description;
-    let url = `http://openweathermap.org/img/wn/${value.data.weather[0].icon}@2x.png`;
+    let url = `https://openweathermap.org/img/wn/${value.data.weather[0].icon}@2x.png`;
     let temp = value.data.main.temp;
     let feels = value.data.main.feels_like;
     let humidity = value.data.main.humidity;
