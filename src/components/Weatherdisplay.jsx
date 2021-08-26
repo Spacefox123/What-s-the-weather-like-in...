@@ -58,17 +58,30 @@ const Weatherdisplay = ({ value }) => {
         <div className="info">
           <div className="text">
             <i class="fas fa-meteor "></i>
-            <p>{`Today, it's goddamn ${description}, or just look through the window, you lazy pissing wanker!`}</p>
+            <p>
+              Today, it's goddamn <strong>{description}</strong>, or just look
+              through the window, you lazy pissing wanker!
+            </p>
             <i class="fas fa-thermometer-half"></i>
-            <p>{`It's ${temp}°C outside. That's bollocks though, beacause it feels more like ${feels}°C.`}</p>
+            <p>
+              It's <strong>{temp}°C</strong> outside. That's bollocks though,
+              beacause it feels more like <strong>{feels}°C</strong>.
+            </p>
             <i class="fas fa-tint "></i>
-            <p>{`The cocksucking pressure is ${pressure} kPa and the humidity is ${humidity}%. That's moist!`}</p>
+            <p>
+              The cocksucking pressure is <strong>{pressure} kPa</strong> and
+              the humidity is <strong>{humidity}%</strong>. That's moist!
+            </p>
             <i class="fas fa-wind "></i>
             <p>
-              {`That asshole wind is blowing at ${wind}m/s. The son of a bitch is blowing ${windDeg} `}
+              That asshole wind is blowing at <strong>{wind}m/s</strong>. The
+              son of a bitch is blowing <strong>{windDeg}</strong>
             </p>
             <i class="fas fa-cloud "></i>
-            <p>{`The cunt clouds are covering ${clouds}% of the motherfucking sky. Git fucked.`}</p>
+            <p>
+              The cunt clouds are covering <strong>{clouds}%</strong> of the
+              motherfucking sky. Git fucked.
+            </p>
           </div>
           <div className="images">
             <img src={url} alt="Weather icon"></img>
