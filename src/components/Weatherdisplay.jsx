@@ -57,17 +57,17 @@ const Weatherdisplay = ({ value }) => {
         <h1 className="animate__bounceIn">{`What's the motherfucking weather in ${city}??`}</h1>
         <div className="info">
           <div className="text">
-            <i class="fas fa-meteor fa-3x"></i>
+            <i class="fas fa-meteor "></i>
             <p>{`Today, it's goddamn ${description}, or just look through the window, you lazy pissing wanker!`}</p>
-            <i class="fas fa-thermometer-half fa-3x"></i>
+            <i class="fas fa-thermometer-half"></i>
             <p>{`It's ${temp}°C outside. That's bollocks though, beacause it feels more like ${feels}°C.`}</p>
-            <i class="fas fa-tint fa-3x"></i>
+            <i class="fas fa-tint "></i>
             <p>{`The cocksucking pressure is ${pressure} kPa and the humidity is ${humidity}%. That's moist!`}</p>
-            <i class="fas fa-wind fa-3x"></i>
+            <i class="fas fa-wind "></i>
             <p>
               {`That asshole wind is blowing at ${wind}m/s. The son of a bitch is blowing ${windDeg} `}
             </p>
-            <i class="fas fa-cloud fa-3x"></i>
+            <i class="fas fa-cloud "></i>
             <p>{`The cunt clouds are covering ${clouds}% of the motherfucking sky. Git fucked.`}</p>
           </div>
           <div className="images">

@@ -39,6 +39,10 @@
   width: 60%;
 }
 
+.weatherdisplay h1 {
+  text-align: center;
+}
+
 .weatherdisplay i {
   padding: 1rem;
 }
@@ -118,9 +122,6 @@ body {
   background-size: cover;
 }
 
-.footermain {
-}
-
 .icons {
   margin-top: 1rem;
   padding: 0, 1rem;
@@ -137,4 +138,207 @@ body {
 
 .icons i:hover {
   scale: 180%;
+}
+
+@media screen and (max-width: 1200px) {
+  .weatherdisplay {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 60vh;
+    margin: 5rem auto;
+    border-radius: 0.5rem;
+  }
+
+  .weatherdisplay hr {
+    border: 1px solid rgb(221, 24, 24);
+    width: 60%;
+  }
+
+  .weatherdisplay i {
+    padding: 1rem;
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+  }
+
+  .notfound {
+    background-color: rgb(221, 24, 24);
+    border: 3rem solid rgb(252, 102, 102);
+  }
+
+  .notfound p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .text {
+    border-right: 0.2rem solid gray;
+    margin: 1.5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(5, 5rem);
+    justify-items: self-start;
+    align-items: center;
+  }
+
+  .text i {
+    width: 0.1rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .images {
+    margin: 0.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .images img {
+    margin: 0.5rem;
+    width: 7rem;
+    border-radius: 1rem;
+    background-color: rgba(129, 183, 255, 0.445);
+
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+  }
+
+  .images svg {
+    box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.48);
+    width: 10rem;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0.5rem 0.2rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+    padding: 0, 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .weatherdisplay {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 60vh;
+    margin: 5rem auto;
+    border-radius: 0.5rem;
+  }
+  .weatherdisplay h1 {
+    font-size: 0.8rem;
+  }
+  .weatherdisplay hr {
+    border: 1px solid rgb(221, 24, 24);
+    width: 60%;
+  }
+
+  .weatherdisplay i {
+    padding: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notfound {
+    background-color: rgb(221, 24, 24);
+    border: 1rem solid rgb(252, 102, 102);
+  }
+
+  .notfound p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .text {
+    border-right: 0rem solid gray;
+    margin: 0rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(5, 2rem);
+    justify-items: self-start;
+    align-items: center;
+  }
+
+  .text p {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .images {
+    margin: 0.1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .images img {
+    margin: 0.2rem;
+    width: 4rem;
+    border-radius: 1rem;
+    background-color: rgba(129, 183, 255, 0.445);
+
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.3) inset;
+  }
+
+  .images svg {
+    box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.48);
+    width: 6rem;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0.5rem 0.2rem;
+  }
+
+  .images p {
+    font-size: 0.7rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+    padding: 0, 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
 }
