@@ -16,7 +16,7 @@ const App = () => {
             setInput('London');
         }
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&lang=en&appid=${API_KEY}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&lang=en&appid=${API_KEY}`)
         .then(response => response.json())
         .then(data => setWeatherData({data}))
         .catch(err => setWeatherData(false))
